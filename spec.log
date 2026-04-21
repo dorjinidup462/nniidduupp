@@ -5,7 +5,7 @@ Key Logic:
 •	Initial Credentialing: All new users are assigned a "Master" temporary password (e.g., Welcome@2026).
 •	Force Change Workflow: A boolean flag in the database (is_first_login) triggers a mandatory password update.
 ________________________________________
-2. User Interface (UI) Components
+2. User Interface (UI) Component
 A. The Gateway Screen
 Before the email/password fields are visible, the user is presented with two large, distinct cards or a toggle switch:
 •	Option 1: "Login as Administrator" (High-level system access).
