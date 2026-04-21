@@ -16,7 +16,7 @@ The initial password/pin: abc@123
 Later user can set their new password 
 
 Admin login should include a simple verification check (e.g., predefined credentials)
-🧑‍💼 Admin Dashboard Features
+Admin Dashboard Features
 View all inventory items
 Add new items (name, category, quantity)
 Edit and delete items and reduce the item or increase the idem 
