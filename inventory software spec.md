@@ -70,6 +70,8 @@ In Scope — Phase 1**
 
 •	Automated purchase order generation
  
+
+
 **2.  Stakeholders & User Roles
 
 
@@ -104,10 +106,11 @@ No username or password fields are shown yet.
 2. 	User selects their user type	Two clearly labelled buttons are shown: 
 
 
-'**🔑 Admin Login' and
+3. '**Admin Login**' and
 
 
-'👤 Staff Login'. User taps one.**
+     **Staff Login'. User taps one.**
+
 4. Login form appears for selected role	Form shows: Email field, Password field, and a 'Show/Hide password' toggle. The header clearly displays the selected role (e.g. 'Admin Login' or 'Staff Login').
 5.	User enters credentials	Email = their company email. Default password format = first initial + last name (e.g. John Smith → jsmith). Case-insensitive.
 6.	System validates credentials	Checks email exists, role matches selected type, and password is correct. Failed attempt increments counter.
@@ -335,7 +338,9 @@ USR-UX-04	After submitting a request, the Staff member must not be able to submi
 USR-UX-05	Email notifications received (approval/rejection) must be mirrored as in-app notifications in the Staff dashboard, shown with an unread badge.
 USR-UX-06	Staff interface must be clean and minimal — staff must not see stock quantities, other users' requests, or any admin functions.
  
+
 **6.  Non-Functional Requirements**
+
 ID	Category	Requirement	Target / Measure
 NFR-01	Performance	Page load time for all screens	< 3 seconds on standard broadband connection
 NFR-02	Performance	Real-time stock balance update after transaction	< 2 seconds
@@ -352,6 +357,7 @@ NFR-12	Audit	Data changes logged	All create/edit/delete/approve/reject actions l
 NFR-13	Data Retention	Minimum data retention	All records (transactions, requests, emails, audit logs) retained for 5 years
 NFR-14	Compliance	Password policy enforcement	System blocks reuse of last 3 passwords
  
+
 **7.  Business Rules**
 
 Rule ID	Module	Rule Description
@@ -478,9 +484,10 @@ submission with warning.
 
 6	Admin / Another Admin	Reviews and approves the request in the Admin Approval queue (self-approval governed by BR-06)
  
-**10.  Assumptions & Constraints**
 
-**10.1  Assumptions**
+**10.  must have & Constraints**
+
+**10.1  must have**
 
 •	All Selice Company staff have a company-issued or personal email address that will be used as their system login identifier.
 
@@ -490,9 +497,9 @@ submission with warning.
 
 •	Selice Company will identify at least one IT contact who is responsible for hosting setup, SSL certificate management, and database backups.
 
-•	Staff training will be delivered by the project team before go-live. A user guide will be provided for both Admin and Staff roles.
 
-•	All users will have access to a device with a modern web browser (Chrome, Firefox, Edge, or Safari) and internet access.
+•	All users will have access to a device with a modern web browser (Chrome, Firefox, Edge, or Safari) and internet access from any device.
+
 
 **10.2  Constraints**
 
@@ -545,10 +552,10 @@ Audit Log	A tamper-proof record of all system actions, retained for compliance a
 
 UAT	User Acceptance Testing — validation by Selice Company staff that the system meets these requirements before go-live
 
-PENDING	Request status: submitted by Staff, not yet reviewed by Admin
+**PENDING	Request status:** submitted by Staff, not yet reviewed by Admin
 
-APPROVED	Request status: reviewed and approved by Admin; stock deducted; issuance email sent
+**APPROVED**	Request status: reviewed and approved by Admin; stock deducted; issuance email sent
 
-REJECTED	Request status: reviewed and declined by Admin; rejection reason recorded and communicated to Staff
+**REJECTED**	Request status: reviewed and declined by Admin; rejection reason recorded and communicated to Staff
  
 
