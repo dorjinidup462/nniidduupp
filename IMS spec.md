@@ -519,7 +519,7 @@ must be responsive on tablet and desktop screen sizes.
 
 IMS	Inventory Management System — the software described in this specification
 
-Admin	A user with the Admin role — typically the Warehouse Manager at Selice Company
+Admin	A user with the Admin role who is responsible for issuing stocks
 
 Staff	A user with the Staff role — any Selice Company employee who needs to request stock
 
