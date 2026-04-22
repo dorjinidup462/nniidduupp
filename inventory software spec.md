@@ -24,6 +24,7 @@ The absence of a formal inventory management process results in:
 •	Duplicate requests, lost requests, and over-issuance go undetected
 
 **1.3  Business Objectives**
+
 The IMS must deliver the following measurable outcomes:
 
 •	100% of stock issuances are recorded digitally with an approval trail
@@ -71,7 +72,8 @@ In Scope — Phase 1**
  
 **2.  Stakeholders & User Roles
 
-2.1  Stakeholder Map**
+
+
 
 Stakeholder	Role in Project	Interest / Concern
 
@@ -89,7 +91,8 @@ There are exactly two roles in Phase 1: Admin and Staff. The Admin cannot use th
 Admin	Warehouse Manager(s) only	Full user management, item catalogue management, stock recording, approve/reject requests, trigger issuance emails, view all reports and audit logs	Submit item requests from the Admin dashboard (must use Staff mode)
 Staff	All other employees	Submit item requests, view own request history and status, update own profile and password	Approve requests, edit stock levels, view other users' requests, access admin functions
  
-**3.  Login Feature
+
+3.  Login Feature
 3.1  Objective**
 Provide a secure, user-type-aware login flow that ensures every session is authenticated, role-appropriate, and protected by a mandatory password-change policy for new accounts. The login experience must clearly distinguish Admin from Staff before credentials are entered.
 
