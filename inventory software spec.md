@@ -1,7 +1,7 @@
 
-SELICE COMPANY
-Business Requirements Specification
-Internal Inventory Management System (IMS)
+**SELICE COMPANY**
+**Business Requirements Specification
+Internal Inventory Management System (IMS)**
 
 Document Version	1.0 — Initial Release
 Prepared By	Business Analysis Team
