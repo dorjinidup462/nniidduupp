@@ -1,5 +1,5 @@
 
-**SELICE COMPANY**
+****SELICE COMPANY****
 
 **Business Requirements Specification
 Internal Inventory Management System (IMS)**
@@ -69,6 +69,7 @@ In Scope — Phase 1**
 •	Automated purchase order generation
  
 **2.  Stakeholders & User Roles
+
 2.1  Stakeholder Map**
 
 Stakeholder	Role in Project	Interest / Concern
@@ -94,52 +95,54 @@ Provide a secure, user-type-aware login flow that ensures every session is authe
 
 **3.2  Login Flow — Step by Step**
 **Step	Screen / Action	System Behaviour**
-1	User visits the IMS URL	System displays the Landing / Role Selection screen. 
+1. User visits the IMS URL	System displays the Landing / Role Selection screen. 
 No username or password fields are shown yet.
-2	User selects their user type	Two clearly labelled buttons are shown: 
-'🔑 Admin Login' and '👤 Staff Login'. User taps one.
-3	Login form appears for selected role	Form shows: Email field, Password field, and a 'Show/Hide password' toggle. The header clearly displays the selected role (e.g. 'Admin Login' or 'Staff Login').
-4	User enters credentials	Email = their company email. Default password format = first initial + last name (e.g. John Smith → jsmith). Case-insensitive.
-5	System validates credentials	Checks email exists, role matches selected type, and password is correct. Failed attempt increments counter.
+2. 	User selects their user type	Two clearly labelled buttons are shown: 
+'**🔑 Admin Login' and '👤 Staff Login'. User taps one.**
+3. Login form appears for selected role	Form shows: Email field, Password field, and a 'Show/Hide password' toggle. The header clearly displays the selected role (e.g. 'Admin Login' or 'Staff Login').
+4.	User enters credentials	Email = their company email. Default password format = first initial + last name (e.g. John Smith → jsmith). Case-insensitive.
+5.	System validates credentials	Checks email exists, role matches selected type, and password is correct. Failed attempt increments counter.
 6a	Success — first login	If it is the user's first login (password has not been changed), system redirects to a mandatory Password Change screen before any dashboard access is granted.
 6b	Success — returning user	System redirects to the role-appropriate dashboard (Admin Dashboard or Staff Dashboard).
 6c	Failure	Error shown: 'Invalid email or password.' Counter incremented. After 5 consecutive failures → account locked. Admin must unlock it.
 
-3.3  Functional Requirements — Login
+**3.3  Functional Requirements — Login**
+
 LG-FR-01	User Story	Must Have
 As any user, I want to select whether I am an Admin or Staff before entering my credentials so that the system loads the correct login context and dashboard.
 Acceptance Criteria	A role-selection screen is shown FIRST at the login URL — before any credential fields appear. Two options displayed: 'Admin Login' and 'Staff Login'. Selecting one takes the user to the appropriate login form. A 'Back' link returns to role selection.
 
-LG-FR-02	User Story	Must Have
+**LG-FR-02	User Story	Must Have**
 As a new user (Admin or Staff), I want to log in with my email and default password (first initial + last name) so that I can access the system on my first day without IT intervention.
 Acceptance Criteria	Default password is auto-generated as [first initial][last name] in lowercase (e.g. jsmith). Password is case-insensitive at this stage. On successful first login, system does NOT load the dashboard — it redirects to the mandatory Password Change screen.
 
-LG-FR-03	User Story	Must Have
+**LG-FR-03	User Story	Must Have**
 As a first-time user, I want to be forced to change my default password before accessing any feature so that my account is secure from day one.
 Acceptance Criteria	Password Change screen shows: Current Password, New Password, Confirm New Password. New password must be min 8 characters, contain at least 1 uppercase letter, 1 lowercase letter, and 1 number. The default password cannot be reused as the new password. User cannot navigate away from this screen until the change is complete. On success, session is established and user is taken to their dashboard.
 
-LG-FR-04	User Story	Must Have
+**LG-FR-04	User Story	Must Have**
 As a returning user, I want to log in and be taken directly to my role dashboard so that I can start working without friction.
 Acceptance Criteria	If password has been previously changed, system loads the correct dashboard: Admin → Admin Dashboard; Staff → Staff Dashboard. No intermediate screens.
-
-LG-FR-05	User Story	Must Have
+****
+LG-FR-05	User Story	Must Have****
 As a user who forgets their password, I want to reset it via a link sent to my registered email so that I can regain access without contacting IT.
 Acceptance Criteria	'Forgot Password?' link on login form. User enters registered email → system sends reset link valid for 60 minutes. Link loads a reset form requiring New Password and Confirm Password (same rules as FR-03). After reset, user is taken to login screen. Reset link is single-use and expires after use.
 
-LG-FR-06	User Story	Must Have
+**LG-FR-06	User Story	Must Have**
 As a user who enters wrong credentials 5 times, I want my account to be locked so that brute-force attacks are prevented.
 Acceptance Criteria	After 5 consecutive failed login attempts: account status set to LOCKED. User sees: 'Your account has been locked. Please contact your administrator.' Admin sees the account flagged in User Management and can unlock it with one click.
 
-LG-FR-07	User Story	Must Have
+**LG-FR-07	User Story	Must Have**
 As any logged-in user, I want to be automatically logged out after 30 minutes of inactivity so that my session is not left open on a shared device.
 Acceptance Criteria	Inactivity timer starts on last user action. At 28 minutes: toast notification 'You will be logged out in 2 minutes.' At 30 minutes: session ends, user redirected to login with message: 'Your session expired. Please log in again.'
 
-LG-FR-08	User Story	Should Have
+**LG-FR-08	User Story	Should Have**
 As an Admin, I want to view a login audit log so that I can detect suspicious access patterns.
 Acceptance Criteria	Audit log records: User ID, email, role, login timestamp, IP address, outcome (Success / Failed / Locked). Filterable by date range, user, and outcome. Exportable to CSV.
 
-3.4  UX Requirements — Login
-Ref	UX Requirement
+**3.4  UX Requirements — Login**
+
+**Ref	UX Requirement**
 LG-UX-01	Role selection buttons must be large, visually distinct, and clearly labelled — e.g. blue for Admin with a key icon, green for Staff with a person icon.
 LG-UX-02	The selected role must be clearly displayed on the login form header so the user knows which context they are logging into.
 LG-UX-03	Password field must include a show/hide toggle icon.
@@ -148,8 +151,8 @@ LG-UX-05	The mandatory password change screen must explain the password rules be
 LG-UX-06	Login page must be fully responsive on desktop, tablet, and mobile browsers.
 LG-UX-07	Pressing Enter/Return on the password field must submit the login form.
  
-4.  Admin Dashboard
-4.1  Objective
+**4.  Admin Dashboard******
+**4.1  Objective**
 Provide the Admin (Warehouse Manager) with a centralised control centre to manage users, the item catalogue, real-time stock levels, incoming staff requests, and outgoing issuance communications. The Admin dashboard is the operational heart of the IMS.
 
 4.2  Dashboard Overview Screen
