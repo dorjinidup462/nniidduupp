@@ -1,4 +1,12 @@
 
+<<<<<<< HEAD
+Purpose
+The system should streamline how staff request office supplies such as notepads, snacks, slippers, and stationery, and allow admins to manage these requests efficiently.
+ User Roles
+There are two types of users:
+Admin
+Staff (User)
+=======
 
 # **Software Requirements Specification (SRS)**
 
