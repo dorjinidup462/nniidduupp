@@ -1,6 +1,5 @@
 
 SELICE COMPANY
-─────────────────────────────
 Business Requirements Specification
 Internal Inventory Management System (IMS)
 
@@ -10,7 +9,7 @@ Date	April 22, 2026
 Status	Draft — Pending Stakeholder Review
 Confidentiality	Internal Use Only
 
-⚠️  This document is the authoritative specification for the Selice Company IMS. Developers must not begin implementation on any feature until the relevant section has been signed off by the Warehouse Manager and IT Lead.
+This document is the authoritative specification for the Selice Company IMS. Developers must not begin implementation on any feature until the relevant section has been signed off by the Warehouse Manager and IT Lead.
  
 1.  Business Context
 1.1  Background
