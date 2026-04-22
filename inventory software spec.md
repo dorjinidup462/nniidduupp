@@ -8,9 +8,11 @@ Internal Inventory Management System (IMS)**
 1.1  Background
 Selice Company currently manages internal stock allocation and issuance through  emails. There is no centralised system to track what items exist, how much is available, who requested what, or whether a request was approved or fulfilled. This creates regular stock discrepancies, or even delays.
 
-1.2  Problem Statement
+**1.2  Problem Statement**
+
 The absence of a formal inventory management process results in:
 •	Stock issued without written approval or record — no audit trail exists
+
 •	Admin staff overwhelmed with informal, untracked item requests via phone or message
 •	Staff unable to raise formal item requests — no standard process
 •	No visibility into current stock levels, consumption patterns, or reorder needs
