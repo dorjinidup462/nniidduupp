@@ -102,7 +102,11 @@ Provide a secure, user-type-aware login flow that ensures every session is authe
 1. User visits the IMS URL	System displays the Landing / Role Selection screen. 
 No username or password fields are shown yet.
 2. 	User selects their user type	Two clearly labelled buttons are shown: 
+
+
 '**🔑 Admin Login' and
+
+
 '👤 Staff Login'. User taps one.**
 4. Login form appears for selected role	Form shows: Email field, Password field, and a 'Show/Hide password' toggle. The header clearly displays the selected role (e.g. 'Admin Login' or 'Staff Login').
 5.	User enters credentials	Email = their company email. Default password format = first initial + last name (e.g. John Smith → jsmith). Case-insensitive.
