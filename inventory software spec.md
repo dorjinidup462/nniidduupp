@@ -14,8 +14,11 @@ The absence of a formal inventory management process results in:
 •	Stock issued without written approval or record — no audit trail exists
 
 •	Admin staff overwhelmed with informal, untracked item requests via phone or message
+
 •	Staff unable to raise formal item requests — no standard process
+
 •	No visibility into current stock levels, consumption patterns, or reorder needs
+
 •	Duplicate requests, lost requests, and over-issuance go undetected
 
 1.3  Business Objectives
