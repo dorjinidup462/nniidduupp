@@ -1,7 +1,6 @@
 
 
-**Business Requirements Specification
-Internal Inventory Management System (IMS)**
+**Internal Inventory Management System (IMS)**
 ****
 
 **1.1  Background**
