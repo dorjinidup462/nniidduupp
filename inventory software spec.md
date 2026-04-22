@@ -11,6 +11,7 @@ Selice Company currently manages internal stock allocation and issuance through 
 **1.2  Problem Statement**
 
 The absence of a formal inventory management process results in:
+
 •	Stock issued without written approval or record — no audit trail exists
 
 •	Admin staff overwhelmed with informal, untracked item requests via phone or message
@@ -21,55 +22,82 @@ The absence of a formal inventory management process results in:
 
 •	Duplicate requests, lost requests, and over-issuance go undetected
 
-1.3  Business Objectives
+**1.3  Business Objectives**
 The IMS must deliver the following measurable outcomes:
+
 •	100% of stock issuances are recorded digitally with an approval trail
+
 •	Admin can notify staff a stock issuance notification directly from the system
+
 •	Staff can submit item requests online 
+
 •	Admin can approve or reject requests with a reason — all decisions recorded
+
 •	Real time stock balance visible to Admin at all times
+
 •	All user accounts are centrally managed — access revoked within minutes when staff leave
 
-1.4  Scope
-In Scope — Phase 1
+**1.4  Scope
+In Scope — Phase 1**
+
 •	Role-based login: Admin and Staff user types with separate experiences
+
 •	Default password system with mandatory first-login password change
+
 •	Admin dashboard: user management, item catalogue, stock recording, request approvals
+
 •	Admin can switch to a Staff view to submit personal item requests on their own behalf
+
 •	Staff dashboard: submit item requests, view request status, view own history
+
 •	Email notifications: admin-triggered issuance emails sent to staff
+
 •	Audit log of all key actions
 
-Out of Scope — Phase 1
+
+
+**Out of Scope — Phase 1**
+
 •	Integration with accounting or ERP software
+
 •	Barcode scanning hardware
+
 •	Supplier/vendor portal
+
 •	Mobile application (web-responsive design is required; native app is not)
+
 •	Automated purchase order generation
  
-2.  Stakeholders & User Roles
-2.1  Stakeholder Map
+**2.  Stakeholders & User Roles
+2.1  Stakeholder Map**
+
 Stakeholder	Role in Project	Interest / Concern
+
 Warehouse Manager / Admin	Primary system user; owns approvals and stock data	Accurate stock records; fast request processing; full audit trail
+
 General Staff	End users submitting item requests	Simple request process; visibility into request status
+
 IT Administrator	Sets up and maintains the system	Clean authentication model; minimal maintenance overhead
 Company Management	Sponsors; receives reports	Cost control; accountability; no stock wastage
 
-2.2  User Role Definitions
+**2.2  User Role Definitions**
 There are exactly two roles in Phase 1: Admin and Staff. The Admin cannot use their Admin account to submit personal item requests — they must switch to a Staff-mode session to do so. This is a deliberate design decision to maintain clean audit separation.
 
-Role	Who Holds It	Core Permissions	Cannot Do
+**Role	Who Holds It	Core Permissions	Cannot Do**
 Admin	Warehouse Manager(s) only	Full user management, item catalogue management, stock recording, approve/reject requests, trigger issuance emails, view all reports and audit logs	Submit item requests from the Admin dashboard (must use Staff mode)
 Staff	All other employees	Submit item requests, view own request history and status, update own profile and password	Approve requests, edit stock levels, view other users' requests, access admin functions
  
-3.  Login Feature
-3.1  Objective
+**3.  Login Feature
+3.1  Objective**
 Provide a secure, user-type-aware login flow that ensures every session is authenticated, role-appropriate, and protected by a mandatory password-change policy for new accounts. The login experience must clearly distinguish Admin from Staff before credentials are entered.
 
-3.2  Login Flow — Step by Step
-Step	Screen / Action	System Behaviour
-1	User visits the IMS URL	System displays the Landing / Role Selection screen. No username or password fields are shown yet.
-2	User selects their user type	Two clearly labelled buttons are shown: '🔑 Admin Login' and '👤 Staff Login'. User taps one.
+
+**3.2  Login Flow — Step by Step**
+**Step	Screen / Action	System Behaviour**
+1	User visits the IMS URL	System displays the Landing / Role Selection screen. 
+No username or password fields are shown yet.
+2	User selects their user type	Two clearly labelled buttons are shown: 
+'🔑 Admin Login' and '👤 Staff Login'. User taps one.
 3	Login form appears for selected role	Form shows: Email field, Password field, and a 'Show/Hide password' toggle. The header clearly displays the selected role (e.g. 'Admin Login' or 'Staff Login').
 4	User enters credentials	Email = their company email. Default password format = first initial + last name (e.g. John Smith → jsmith). Case-insensitive.
 5	System validates credentials	Checks email exists, role matches selected type, and password is correct. Failed attempt increments counter.
