@@ -3,10 +3,10 @@
 
 **Business Requirements Specification
 Internal Inventory Management System (IMS)**
-**
+****
 **1.  Business Context
 
-1.1  Background****
+**1.1  Background**
 Selice Company currently manages internal stock allocation and issuance through  emails. There is no centralised system to track what items exist, how much is available, who requested what, or whether a request was approved or fulfilled. This creates regular stock discrepancies, or even delays.
 
 **1.2  Problem Statement**
