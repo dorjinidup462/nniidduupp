@@ -71,7 +71,7 @@ In Scope — Phase 1**
  
 
 
-**2.  Stakeholders & User Roles
+**2.  Stakeholders & User Roles**
 
 
 
@@ -93,8 +93,10 @@ Admin	Warehouse Manager(s) only	Full user management, item catalogue management,
 Staff	All other employees	Submit item requests, view own request history and status, update own profile and password	Approve requests, edit stock levels, view other users' requests, access admin functions
  
 
-3.  Login Feature
-3.1  Objective**
+
+**3.  **Login Feature
+
+3.1  Objective****
 Provide a secure, user-type-aware login flow that ensures every session is authenticated, role-appropriate, and protected by a mandatory password-change policy for new accounts. The login experience must clearly distinguish Admin from Staff before credentials are entered.
 
 
