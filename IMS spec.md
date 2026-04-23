@@ -3,10 +3,10 @@
 **Internal Inventory Management System (IMS)**
 ****
 
-**1.1  Background Story**
+**1.1  Intro**
 
 
-Selice Company currently manages internal stock allocation and issuance through  emails. There is no centralised system to track what items exist, how much is available, who requested what, or whether a request was approved or fulfilled. This creates regular stock discrepancies, or even delays.
+Selice Company currently manages internal stock allocation and issuance through  emails. There is no centralised system to track what items exist, how much is available, who requested what, or whether a request was approved or fulfilled. This creates regular stock discrepancies and repetation and etc task.
 
 **1.2  Problem Statement**
 
@@ -527,7 +527,7 @@ Staff Mode	A session mode available to Admin users that presents the Staff dashb
 
 
 Default Password	The auto-generated first-use password assigned to every new account: [first initial][last name] in lowercase (e.g. 
-jsmith for John Smith)
+ndorji for nidup dorji)
 
 First Login	The flag indicating that a user has not yet changed their default password. First Login = TRUE blocks dashboard access until the password is changed
 
