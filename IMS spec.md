@@ -167,7 +167,7 @@ LG-UX-07	Pressing Enter/Return on the password field must submit the login form.
 **4.  Admin Dashboard******
 
 **4.1  Objective**
-Provide the Admin (Warehouse Manager) with a centralised control centre to manage users, the item catalogue, real-time stock levels, incoming staff requests, and outgoing issuance communications. The Admin dashboard is the operational heart of the IMS.
+Provide the Admin  with a centralised control centre to manage users, the item catalogue, real-time stock levels, incoming staff requests, and outgoing issuance communications. The Admin dashboard is the operational heart of the IMS.
 
 4.2  Dashboard Overview Screen
 On login, the Admin sees a summary dashboard with the following widgets:
