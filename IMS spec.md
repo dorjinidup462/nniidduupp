@@ -162,7 +162,10 @@ LG-UX-05	The mandatory password change screen must explain the password rules be
 LG-UX-06	Login page must be fully responsive on desktop, tablet, and mobile browsers.
 LG-UX-07	Pressing Enter/Return on the password field must submit the login form.
  
+
+
 **4.  Admin Dashboard******
+
 **4.1  Objective**
 Provide the Admin (Warehouse Manager) with a centralised control centre to manage users, the item catalogue, real-time stock levels, incoming staff requests, and outgoing issuance communications. The Admin dashboard is the operational heart of the IMS.
 
